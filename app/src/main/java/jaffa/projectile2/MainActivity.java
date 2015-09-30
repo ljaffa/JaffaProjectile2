@@ -34,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Picasso.with(this).load("http://i.imgur.com/DvpvklR.png").into(image);
-
         angle = (TextView) findViewById(R.id.angleId);
         velocity = (TextView) findViewById(R.id.velocityId);
         time = (TextView) findViewById(R.id.timeId);
@@ -44,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         editAngle = (EditText) findViewById(R.id.editAngleId);
         editVelocity = (EditText) findViewById(R.id.editVelocityId);
         editTime = (EditText) findViewById(R.id.editTimeId);
+
+        image = (ImageView) findViewById(R.id.imageId);
+
+        Picasso.with(this).load("http://i.imgur.com/DvpvklR.png").into(image);
 
         button = (Button) findViewById(R.id.buttonId);
         button.setOnClickListener(new View.OnClickListener() {
