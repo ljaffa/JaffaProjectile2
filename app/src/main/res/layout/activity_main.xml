@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/angleId"
+        android:inputType="numberDecimal"
         />
 
     <TextView
@@ -38,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/velocityId"
+        android:inputType="numberDecimal"
         />
 
     <TextView
@@ -53,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/timeId"
+        android:inputType="numberDecimal"
         />
 
     <TextView
